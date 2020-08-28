@@ -8,10 +8,10 @@ $(document).ready(function () {
         trigger: 'focus'
     })
 });
-$(window).on("scroll", function () {
-    if ($(window).scrollTop() >= 200) {
-        $("#nav-index").addClass("compressed");
-    } else {
-        $("#nav-index").removeClass("compressed");
-    }
-});
+// $(window).on("scroll", function () {
+//     if ($(window).scrollTop() >= 200) {
+//         $("#nav-index").addClass("compressed");
+//     } else {
+//         $("#nav-index").removeClass("compressed");
+//     }
+// });
