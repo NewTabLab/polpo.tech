@@ -1,4 +1,4 @@
-# HTML Boilerplate 
+# polpo.tech
 ## Included Packages
 - [Bootstrap 4](https://getbootstrap.com/docs/4.4/getting-started/introduction/)
 - [jquery](https://jquery.com/)
@@ -20,9 +20,9 @@
 
 ## Install
 ```bash
-git clone https://github.com/tarikkavaz/HTML-Boilerplate
+git clone https://github.com/NewTabLab/polpo.tech.git
 
-cd HTML-Boilerplate
+cd polpo.tech
 
 npm install
 ```
