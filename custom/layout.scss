@@ -13,11 +13,9 @@ body {
 }
 
 .navbar {
-    padding-top: $nav-padding;
-    padding-bottom: $nav-padding;
-    
-    // transition: all 0.5s;
+    padding: $nav-padding 1rem;   
     background-color: $white !important;
+    // box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
     .nav-item {
         padding: 0 2rem;
     }
@@ -29,28 +27,15 @@ body {
     }
     img {
         min-height: $logo-height;
-        // transition: all 0.5s;
     }
 }
-// .compressed {
-//     padding-top: 10px;
-//     padding-bottom: 10px;
-//     background-color: $white !important;
-//     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
-//     a {
-//         color: $black !important;
-//     }
-//     img {
-//         max-height: 50px;
-//     }
-// }
+
 .modal-backdrop {
     background-color:$theme-dark-gray;
     opacity: .7 !important;
 }
 #heading {
-    // margin-top: calc(#{$logo-height} + #{$nav-padding} + #{$nav-padding});
-    margin-top: $logo-height;
+    margin-top: calc(#{$logo-height} + (#{$nav-padding} * 2));
     position: relative;
     .title {
         position: absolute;
