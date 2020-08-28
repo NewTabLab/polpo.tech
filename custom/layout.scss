@@ -13,8 +13,9 @@ body {
 }
 
 .navbar {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: $nav-padding;
+    padding-bottom: $nav-padding;
+    
     // transition: all 0.5s;
     background-color: $white !important;
     .nav-item {
@@ -27,8 +28,8 @@ body {
         color: $black !important;
     }
     img {
-        max-height: 150px;
-        transition: all 0.5s;
+        min-height: $logo-height;
+        // transition: all 0.5s;
     }
 }
 // .compressed {
@@ -48,10 +49,12 @@ body {
     opacity: .7 !important;
 }
 #heading {
+    // margin-top: calc(#{$logo-height} + #{$nav-padding} + #{$nav-padding});
+    margin-top: $logo-height;
     position: relative;
     .title {
         position: absolute;
-        z-index: 1080;
+        z-index: 2;
         max-width: 50%;
         @include media-breakpoint-down(md) { max-width: 90%; }
     }
