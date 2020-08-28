@@ -48,9 +48,19 @@ body {
     opacity: .7 !important;
 }
 #heading {
-    background: url("../img/whale.jpg"); 
-    background-repeat: no-repeat;
-    background-size: contain;
+    position: relative;
+    .title {
+        position: absolute;
+        z-index: 1080;
+        max-width: 50%;
+        @include media-breakpoint-down(md) { max-width: 90%; }
+    }
+    .whale {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
 }
 #content {
     background-color: $blue-dark;
