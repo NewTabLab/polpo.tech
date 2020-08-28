@@ -9,12 +9,10 @@ html {
 }
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: $white;
+    background-color: $blue-dark;
 }
 
 .navbar {
-    // opacity: 0;
-    // transition-property: transform, opacity;
     padding-top: 50px;
     padding-bottom: 50px;
     transition: all 0.5s;
@@ -31,8 +29,6 @@ body {
     }
 }
 .compressed {
-    opacity: 1;
-    transition-property: transform, opacity; 
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: $white !important;
@@ -49,25 +45,25 @@ body {
     opacity: .7 !important;
 }
 #heading {
-    background: url("../img/pebbles.jpg") no-repeat center center; 
+    background: url("../img/whale.jpg") no-repeat center center; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
 #content {
-    background-color: $white;
-    color: $theme-dark-gray;
+    background-color: $blue-dark;
+    color: $white;
     #gallery {
         img {
             max-width: 200px;
         }
     }
-    @include media-breakpoint-only(xs) { .mp-test{color:gray;span{&:after{@include font-awesome('\f3cd')}}} }
-    @include media-breakpoint-only(sm) { .mp-test{color:red;span{&:after{@include font-awesome('\f3fa')}}} }
-    @include media-breakpoint-only(md) { .mp-test{color:green;span{&:after{@include font-awesome('\f109')}}} }
-    @include media-breakpoint-only(lg) { .mp-test{color:blue;span{&:after{@include font-awesome('\f108');}}} }
-    @include media-breakpoint-only(xl) { .mp-test{color:black;span{&:after{@include font-awesome('\f26c');}}} }
+    // @include media-breakpoint-only(xs) { .mp-test{color:gray;  span{&:after{@include font-awesome('\f3cd')}}} }
+    // @include media-breakpoint-only(sm) { .mp-test{color:red;   span{&:after{@include font-awesome('\f3fa')}}} }
+    // @include media-breakpoint-only(md) { .mp-test{color:green; span{&:after{@include font-awesome('\f109')}}} }
+    // @include media-breakpoint-only(lg) { .mp-test{color:blue;  span{&:after{@include font-awesome('\f108');}}} }
+    // @include media-breakpoint-only(xl) { .mp-test{color:black; span{&:after{@include font-awesome('\f26c');}}} }
 }
 #icons {
     i {
@@ -103,7 +99,7 @@ body {
     left: 1rem;
 }
 
-.pebble-0 {
+.title_grp {
     max-height: 350px; 
     height: auto;
 }
