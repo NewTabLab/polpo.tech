@@ -122,7 +122,7 @@ footer {
 
     font-weight: 400;
     img {
-        max-height: calc(#{$logo-height} / 2);
+        max-height: calc(#{$logo-height} / 1.5);
     }
     a, a:hover {
         color: $black;
