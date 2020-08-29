@@ -16,3 +16,4 @@ $theme-light-gray:  #cccccc;
 
 $logo-height: 80px;
 $nav-padding: 10px;
+$navbar: calc( #{$logo-height} + ( #{$nav-padding} * 2 ));
