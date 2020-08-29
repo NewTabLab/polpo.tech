@@ -6,6 +6,7 @@ html {
     position: relative;
     min-height: 100vh;
     min-height: -webkit-fill-availabe;
+    scroll-behavior: smooth;
 }
 body {
     font-family: 'Montserrat', sans-serif;
@@ -34,35 +35,23 @@ body {
     background-color:$theme-dark-gray;
     opacity: .7 !important;
 }
-#heading {
-    margin-top: calc(#{$logo-height} + (#{$nav-padding} * 2));
-    position: relative;
-    .title {
-        position: absolute;
-        z-index: 2;
-        max-width: 50%;
-        @include media-breakpoint-down(md) { max-width: 90%; }
-    }
-    .whale {
-        position: relative;
-        top: 0;
-        left: 0;
-    }
 
-}
 #content {
     background-color: $blue-dark;
     color: $white;
-    #gallery {
-        img {
-            max-width: 200px;
-        }
+
+    // scroll-snap-type: y mandatory;
+    // overflow-y: scroll;
+    // height: 100vh;
+
+
+    section {
+        height: 100vh;
+        // scroll-snap-align: start;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    // @include media-breakpoint-only(xs) { .mp-test{color:gray;  span{&:after{@include font-awesome('\f3cd')}}} }
-    // @include media-breakpoint-only(sm) { .mp-test{color:red;   span{&:after{@include font-awesome('\f3fa')}}} }
-    // @include media-breakpoint-only(md) { .mp-test{color:green; span{&:after{@include font-awesome('\f109')}}} }
-    // @include media-breakpoint-only(lg) { .mp-test{color:blue;  span{&:after{@include font-awesome('\f108');}}} }
-    // @include media-breakpoint-only(xl) { .mp-test{color:black; span{&:after{@include font-awesome('\f26c');}}} }
 
     h2 {
         font-weight: 700;
@@ -74,71 +63,35 @@ body {
     h4 {
         font-weight: 300;
     }
-    p {}
+    p {
+        font-weight: 300;
+    }
+
+    #heading {
+        margin-top: calc(#{$logo-height} + (#{$nav-padding} * 2));
+        position: relative;
+        
+        .title {
+            position: absolute;
+            z-index: 2;
+            max-width: 50%;
+            @include media-breakpoint-down(md) { max-width: 90%; }
+        }
+        .whale {
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+        
+    
+    }
 }
+
 #icons {
     i {
         font-size: 2rem;
         padding: .5rem;
     }
-}
-.box {
-    position: fixed;
-    bottom: 1rem;
-}
-
-.box-top {
-    position: fixed;
-    bottom: -5rem;
-}
-.box-top-right {
-    margin-left: auto;
-    right: -40px;
-
-}
-.box-top-left {
-    margin: auto;
-    left: -40px;
-
-}
-.box-right {
-    margin-left: auto;
-    right: 1rem;
-}
-.box-left {
-    margin: auto;
-    left: 1rem;
-}
-
-.title_grp {
-    max-height: 350px; 
-    height: auto;
-}
-.pebble-1-l {
-    max-height: 350px; 
-    height: auto;
-}
-.pebble-1-r {
-    max-height: 300px; 
-    height: auto; 
-    margin-right: 3rem;
-}
-.pebble-2-l {
-    max-height: 300px; 
-    height: auto; 
-    margin-left: 3rem;
-}
-.pebble-2-r {
-    max-height: 350px; 
-    height: auto;
-}
-.pebble-b-l {
-    max-height: 150px; 
-    height: auto;
-}
-.pebble-b-r {
-    max-height: 150px; 
-    height: auto;
 }
 
 footer {

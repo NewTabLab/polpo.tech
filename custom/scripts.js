@@ -7,6 +7,9 @@ $(document).ready(function () {
     $("[data-toggle=popover]").popover({
         trigger: 'focus'
     })
+
+
+
 });
 // $(window).on("scroll", function () {
 //     if ($(window).scrollTop() >= 200) {
