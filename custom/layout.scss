@@ -22,6 +22,7 @@ body {
     }
     a {
         color: $black !important;
+        cursor: pointer;
     }
     .dropdown-item {
         color: $black !important;
@@ -40,14 +41,8 @@ body {
     background-color: $blue-dark;
     color: $white;
 
-    // scroll-snap-type: y mandatory;
-    // overflow-y: scroll;
-    // height: 100vh;
-
-
     section {
-        height: 100vh;
-        // scroll-snap-align: start;
+        min-height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
