@@ -10,8 +10,8 @@ var rsync       = require('gulp-rsync');
 gulp.task('sass', function() {
     return gulp.src([
             'node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss',
-            'node_modules/jquery-fancybox/source/scss/jquery.fancybox.scss',
-            'node_modules/retinajs/dist/_retina.scss',
+            // 'node_modules/jquery-fancybox/source/scss/jquery.fancybox.scss',
+            // 'node_modules/retinajs/dist/_retina.scss',
             'node_modules/aos/src/sass/aos.scss',
             'custom/*.scss'
         ])
@@ -29,8 +29,8 @@ gulp.task('js', function() {
             'node_modules/jquery/dist/jquery.min.js',
             'node_modules/popper.js/dist/umd/popper.min.js',
             'node_modules/bootstrap/dist/js/bootstrap.min.js',
-            'node_modules/jquery-fancybox/source/js/jquery.fancybox.js',
-            'node_modules/retinajs/dist/retina.min.js',
+            // 'node_modules/jquery-fancybox/source/js/jquery.fancybox.js',
+            // 'node_modules/retinajs/dist/retina.min.js',
             'node_modules/aos/dist/aos.js',
             'custom/scripts.js'
         ])

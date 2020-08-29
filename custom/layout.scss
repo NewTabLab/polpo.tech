@@ -28,7 +28,7 @@ body {
         color: $black !important;
     }
     img {
-        min-height: $logo-height;
+        max-height: $logo-height;
     }
 }
 
@@ -64,9 +64,6 @@ body {
     }
 
     #heading {
-        margin-top: calc(#{$logo-height} + (#{$nav-padding} * 2));
-        position: relative;
-        
         .title {
             position: absolute;
             z-index: 2;
@@ -78,9 +75,14 @@ body {
             top: 0;
             left: 0;
         }
-        
-    
     }
+    #vision {}
+    #video {}
+    #discover {}
+    #pictos {}
+    #experience {}
+    #technology {}
+    #contact {}
 }
 
 #icons {
@@ -91,11 +93,11 @@ body {
 }
 
 footer {
-    background-color: $theme-dark-gray;
-    color: $white;
+    background-color: $blue-light;
+    color: $pink;
 
-    font-weight: 500;
+    font-weight: 400;
     img {
-        max-height: 80px;
+        max-height: $logo-height;
     }
 }
