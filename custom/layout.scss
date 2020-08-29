@@ -96,7 +96,30 @@ body {
         
     }
     #discover {
-        
+        color: $black;
+        .container {
+            background-color: $gray-300;
+            padding: 0;
+            min-height: 5rem;
+            @include media-breakpoint-down(md) { 
+                margin-top: $navbar; 
+                text-align: center;
+            }
+            h2 {
+                display: block;
+                background-color: $white;
+                margin-top: 0;
+                padding: 1rem;
+            }
+            .pictos {
+                div {
+                    text-align: center;
+                }
+                p {
+                    font-weight: 400;
+                }
+            }
+        }
     }
     #pictos {
         

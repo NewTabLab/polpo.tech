@@ -2,7 +2,6 @@ $(document).ready(function () {
     AOS.init({
         mirror: true,
     });
-    $('.fancybox').fancybox();
     $('[data-toggle="tooltip"]').tooltip();
     $("[data-toggle=popover]").popover({
         trigger: 'focus'
