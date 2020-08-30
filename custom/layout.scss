@@ -123,8 +123,10 @@ body {
     }
     #pictos {
         .row {
-            margin-bottom: 10rem;
-            .col {
+            margin-bottom: 5rem;
+            padding-bottom: 5rem;
+            @include media-breakpoint-down(md) { border-bottom: 1px dotted $white; }
+            div {
                 margin: auto 0;
             }
         }
