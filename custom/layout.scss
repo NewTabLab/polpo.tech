@@ -122,7 +122,12 @@ body {
         }
     }
     #pictos {
-        
+        .row {
+            margin-bottom: 10rem;
+            .col {
+                margin: auto 0;
+            }
+        }
     }
     #experience {
         
