@@ -101,6 +101,9 @@ body {
             background-color: $gray-300;
             padding: 0;
             min-height: 5rem;
+            -webkit-box-shadow: 5px 10px 45px 0 rgba(0,0,0,0.45);
+            -moz-box-shadow: 5px 10px 45px 0 rgba(0,0,0,0.45);
+            box-shadow: 5px 10px 45px 0 rgba(0,0,0,0.45);
             @include media-breakpoint-down(md) { 
                 margin-top: $navbar; 
                 text-align: center;
@@ -138,12 +141,16 @@ body {
         margin-bottom: 10rem;
         .techs {
             background-color: $gray-300;
-            padding: 3rem;
+            padding-top: 3rem;
             min-height: 5rem;
+            -webkit-box-shadow: 5px 10px 45px 0 rgba(0,0,0,0.45);
+            -moz-box-shadow: 5px 10px 45px 0 rgba(0,0,0,0.45);
+            box-shadow: 5px 10px 45px 0 rgba(0,0,0,0.45);
             // position: relative;
-            @include media-breakpoint-down(lg) { 
+            @include media-breakpoint-down(md) { 
                 margin-top: $navbar; 
                 text-align: center;
+                padding: 3rem;
             }
             div {
                 text-align: center;
@@ -154,7 +161,7 @@ body {
                     // }
                 }
                 img {
-                    @include media-breakpoint-up(sm) {
+                    @include media-breakpoint-only(sm) {
                         max-height: 99px;
                         width: auto;
                     }
