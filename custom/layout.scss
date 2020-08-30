@@ -135,7 +135,44 @@ body {
         
     }
     #technology {
-        
+        margin-bottom: 10rem;
+        .techs {
+            background-color: $gray-300;
+            padding: 3rem;
+            min-height: 5rem;
+            // position: relative;
+            @include media-breakpoint-down(lg) { 
+                margin-top: $navbar; 
+                text-align: center;
+            }
+            div {
+                text-align: center;
+                @include media-breakpoint-up(sm) {
+                    // @include gomore;
+                    // &:nth-child(1) {
+                    //     padding-left: 1.5rem;
+                    // }
+                }
+                img {
+                    @include media-breakpoint-up(sm) {
+                        max-height: 99px;
+                        width: auto;
+                    }
+                }
+                p {
+                    margin-top: 1rem;
+                    font-size: .6rem;
+                    font-weight: 400;
+                    color: $black;
+                    @include media-breakpoint-down(lg) {
+                        font-size: 1rem;
+                        margin-bottom: 2rem;
+                    }
+                }
+            }
+            
+            
+        }
     }
 }
 
